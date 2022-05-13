@@ -19,15 +19,21 @@ const App = () => {
   }, []);
 
   const onLineSelectChange = async (event) => {
+    for (var route of allRoutes) {
+      if (route.id === event.target.value) {
+        setCurrentColor(`#${route.attributes.color}`);
+      }
+    }
     var {data} = await getLineData(event.target.value);
     setCurrentLineStops(data);
   }
 
   return (
     <div className='app-container'>
-      <Navbar />
+      <Navbar currentColor={currentColor}/>
       <SubwayLines allRoutes={allRoutes} onLineSelectChange={onLineSelectChange}/>
-      <SubwayStops currentLineStops={currentLineStops}/>
+      <h3 className='section-title'>Line Stop List:</h3>
+      <SubwayStops currentColor={currentColor} currentLineStops={currentLineStops}/>
     </div>
   );
 }
