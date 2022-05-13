@@ -17,7 +17,7 @@ MBTA is an application which shows you available subway routes in Boston, MA. It
 
 ## Getting Started
 
-This app can be visited at: http://18.144.46.75:3000/
+This app can be visited at: http://18.144.46.75/
 
 or
 
