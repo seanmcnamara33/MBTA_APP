@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar.jsx';
 import SubwayLines from './Components/SubwayLines.jsx';
 import SubwayStops from './Components/SubwayStops.jsx';
-import {getAllData} from './Helpers/Helpers.js';
+import {getAllData, getLineData} from './Helpers/Helpers.js';
 
 
 const App = () => {
@@ -17,11 +17,16 @@ const App = () => {
     })
   }, []);
 
+  const onLineSelectChange = async (event) => {
+    var {data} = await getLineData(event.target.value);
+    setCurrentLineStops(data);
+  }
+
   return (
     <div className='app-container'>
       <Navbar />
-      <SubwayLines allRoutes={allRoutes}/>
-      <SubwayStops />
+      <SubwayLines allRoutes={allRoutes} onLineSelectChange={onLineSelectChange}/>
+      <SubwayStops currentLineStops={currentLineStops}/>
     </div>
   );
 }
