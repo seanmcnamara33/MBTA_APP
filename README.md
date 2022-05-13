@@ -3,7 +3,7 @@
 ## About MBTA APP
 
 
-MBTA is an application which shows you available subway routes in Boston, MA. It will also show you the stops of that route based on selection of one of the available routes.
+MBTA is an application which shows you available subway routes in Boston, MA. It will also show you the stops of a route if it is currently selected.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
