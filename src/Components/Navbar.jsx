@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Navbar = () => {
-  return null;
+  return (
+    <div className='navbar'>
+      <h2>Welcome To The MBTA Tracker</h2>
+    </div>
+  )
 }
 
 export default Navbar;
