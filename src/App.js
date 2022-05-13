@@ -7,6 +7,7 @@ import {getAllData, getLineData} from './Helpers/Helpers.js';
 
 
 const App = () => {
+  const [currentColor, setCurrentColor] = useState('black');
   const [allRoutes, setAllRoutes] = useState([]);
   const [currentLineStops, setCurrentLineStops] = useState([]);
 
