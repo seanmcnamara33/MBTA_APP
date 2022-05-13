@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({currentColor}) => {
   return (
-    <div className='navbar'>
+    <div style={{'--color': currentColor}} className='navbar'>
       <h2>Welcome To The MBTA Tracker</h2>
     </div>
   )

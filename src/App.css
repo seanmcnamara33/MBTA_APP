@@ -16,9 +16,9 @@
   margin: 10px;
   padding: 5px;
   width: 50%;
-  border: 1px solid black;
+  border: 1px solid var(--color);
   border-radius: 3px;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 2px var(--color);
 }
 
 .section-title {
@@ -38,14 +38,14 @@
   width: 95%;
   margin: 10px;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--color);
   border-radius: 3px;
-  box-shadow: 0 0 2px black;
+  box-shadow: 0 0 2px var(--color);
 }
 
 .current-line-stop-container:hover {
-  background-color: black;
+  background-color: var(--color);
   color: white;
-  border-color: black;
+  border-color: var(--color);
   opacity: .8;
 }
