@@ -33,7 +33,9 @@ const App = () => {
       <Navbar currentColor={currentColor}/>
       <SubwayLines allRoutes={allRoutes} onLineSelectChange={onLineSelectChange}/>
       <h3 className='section-title'>Line Stop List:</h3>
-      <SubwayStops currentColor={currentColor} currentLineStops={currentLineStops}/>
+      {currentLineStops.length > 0 &&
+        <SubwayStops currentLineStops={currentLineStops} currentColor={currentColor}/>
+      }
     </div>
   );
 }
