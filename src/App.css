@@ -33,6 +33,7 @@
   height: 60vh;
   overflow-y: scroll;
 }
+
 .current-line-stop-container {
   display: flex;
   flex-direction: column;
