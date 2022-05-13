@@ -30,6 +30,8 @@
   flex-direction: column;
   align-items: center;
   width: 50%;
+  height: 60vh;
+  overflow-y: scroll;
 }
 .current-line-stop-container {
   display: flex;
