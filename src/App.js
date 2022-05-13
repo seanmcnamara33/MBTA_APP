@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div className='app-container'>
       <Navbar />
-      <SubwayLines />
+      <SubwayLines allRoutes={allRoutes}/>
       <SubwayStops />
     </div>
   );
